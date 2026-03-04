@@ -1,1741 +1,375 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="auto">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajkamal Sah — Assistant Professor Candidate</title>
+  <meta name="description" content="Portfolio of Rajkamal Sah, PMRF Research Scholar at IISc Bangalore: research, publications, teaching, skills, and contact." />
 
-  <!-- SEO -->
-  <title>Rajkamal Sah | Aerospace Engineering | IISc Bengaluru</title>
-  <meta name="description" content="Rajkamal Sah is a PMRF Research Scholar and PhD Candidate in Aerospace Engineering at the Indian Institute of Science (IISc), Bengaluru. Research in high-speed aerodynamics, rotating body flows, PIV, Schlieren imaging, and compressible CFD." />
-  <meta name="keywords" content="Rajkamal Sah, IISc Bengaluru, aerospace engineering, high-speed aerodynamics, rotating bodies, spinning cone aerodynamics, PIV, Schlieren imaging, compressible flow, ANSYS Fluent, PMRF fellowship, experimental fluid mechanics, CFD" />
-  <meta name="author" content="Rajkamal Sah" />
-  <meta property="og:title" content="Rajkamal Sah | Aerospace Engineering Researcher | IISc" />
-  <meta property="og:description" content="PMRF Research Scholar studying unsteady aerodynamics of spinning conical bodies. Expert in experimental and computational fluid mechanics." />
-  <meta property="og:type" content="website" />
+  <!-- Favicon (SVG data URI) + fallbacks -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-family='system-ui,Segoe UI,Roboto' font-size='34' fill='white'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- Open Graph / Twitter cards -->
+  <meta property="og:title" content="Rajkamal Sah — Assistant Professor Candidate" />
+  <meta property="og:description" content="PMRF Research Scholar at IISc Bangalore: research, publications, teaching, skills, and contact." />
+  <meta property="og:url" content="https://your-domain.example/" />
+  <meta property="og:image" content="og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rajkamal Sah — Assistant Professor Candidate" />
+  <meta name="twitter:description" content="PMRF Research Scholar at IISc Bangalore: research, publications, teaching, skills, and contact." />
+  <meta name="twitter:image" content="og-image.png" />
+  <meta name="theme-color" content="#2563eb" />
+  <link rel="canonical" href="https://your-domain.example/" />
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rajkamal Sah",
+    "jobTitle": "PMRF Research Scholar",
+    "affiliation": {"@type":"CollegeOrUniversity","name":"Indian Institute of Science"},
+    "address": {"@type":"PostalAddress","addressLocality":"Bangalore","addressRegion":"Karnataka","addressCountry":"IN"},
+    "email": "mailto:rajkamalsah@iisc.ac.in",
+    "telephone": "+917349669847",
+    "url": "https://abc.wixsite.com/abc",
+    "sameAs": [
+      "https://www.linkedin.com/in/rajkamalsah/",
+      "https://github.com/Rajkamalsah?tab=repositories",
+      "https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID",
+      "https://orcid.org/0009-0006-0560-2539"
+    ]
+  }
+  </script>
 
   <style>
-    /* ── Reset & Base ───────────────────────────────────────────────────── */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --navy:        #0f172a;
-      --navy-soft:   #1e293b;
-      --accent:      #2563eb;
-      --accent-light:#3b82f6;
-      --accent-muted:#dbeafe;
-      --bg:          #ffffff;
-      --bg-alt:      #f8fafc;
-      --bg-section:  #f1f5f9;
-      --text:        #1e293b;
-      --muted:       #64748b;
-      --border:      #e2e8f0;
-      --white:       #ffffff;
-      --radius:      8px;
-      --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
-      --shadow-md:   0 4px 16px rgba(0,0,0,.10);
-      --max-w:       860px;
-      --nav-h:       64px;
+    :root{
+      --bg:#ffffff; --bg-soft:#fafafa; --fg:#0f172a; --muted:#475569; --card:#ffffffcc; --border:#e5e7eb; --link:#1e40af; --chip:#0f172a10;
+      --accent:#2563eb; --shadow:0 6px 24px rgba(2,6,23,.06);
+    }
+    [data-theme="dark"]:root, @media(prefers-color-scheme:dark){
+      --bg:#0b0b10; --bg-soft:#0f1116; --fg:#e5e7eb; --muted:#a1a1aa; --card:#0f1116cc; --border:#1f2937; --link:#93c5fd; --chip:#e5e7eb12;
+      --accent:#60a5fa; --shadow:0 6px 24px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:linear-gradient(120deg,var(--bg),var(--bg-soft));color:var(--fg)}
+    .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+    header.top{position:sticky;top:0;z-index:50;backdrop-filter:saturate(180%) blur(8px);background:color-mix(in srgb,var(--bg),transparent 30%);border-bottom:1px solid var(--border)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;padding:10px 0;gap:12px}
+    .brand{display:flex;align-items:center;gap:10px}
+    .logo{height:38px;width:38px;border-radius:12px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;display:grid;place-items:center;font-weight:700}
+    .brand .meta{line-height:1.1}
+    .brand .name{font-weight:700}
+    nav a{color:var(--fg);opacity:.85;text-decoration:none;font-size:15px;margin:0 8px}
+    nav a:hover{opacity:1}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);border-radius:12px;padding:8px 12px;text-decoration:none;color:var(--fg);box-shadow:var(--shadow)}
+    .btn:hover{transform:translateY(-1px)}
+    .hero{padding:28px 0}
+    .grid{display:grid;gap:16px}
+    @media(min-width:900px){.grid.cols-3{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    h1{font-size:clamp(26px,3vw,34px);margin:0 0 6px}
+    h2{font-size:clamp(22px,2.6vw,28px);margin:0 0 14px}
+    h3{font-size:18px;margin:0 0 8px}
+    section{padding:28px 0}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--border);border-radius:999px;padding:4px 10px;font-size:13px}
+    .list{list-style:none;padding:0;margin:0}
+    .pub{display:flex;flex-direction:column;gap:6px;border-left:3px solid var(--border);padding-left:12px}
+    .muted{color:var(--muted)}
+    a{color:var(--link)}
+    .two{display:grid;gap:16px}
+    @media(min-width:900px){.two{grid-template-columns:1fr 1fr}}
+    .skills{display:grid;gap:16px}
+    @media(min-width:900px){.skills{grid-template-columns:1fr 1fr}}
+    footer{border-top:1px solid var(--border);padding:28px 0;margin-top:18px}
+    .row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+    .contactgrid{display:grid;gap:10px}
+    @media(min-width:780px){.contactgrid{grid-template-columns:repeat(3,1fr)}}
+    .nav{display:none}
+    @media(min-width:900px){.nav{display:flex}}
+    .hidden{display:none}
+    /* Print-friendly */
+    @media print{
+      header, footer, .btn {display:none !important}
+      body{background:#fff;color:#000}
+      .card{box-shadow:none !important;border:1px solid #ddd}
+      .wrap{max-width:100%;padding:0 8mm}
+      a{color:#000;text-decoration:underline}
+      section{page-break-inside:avoid}
     }
-
-    html { scroll-behavior: smooth; font-size: 16px; }
-
-    body {
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    img { max-width: 100%; display: block; }
-
-    /* ── Utility ─────────────────────────────────────────────────────────── */
-    .container { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; }
-    .section    { padding: 80px 0; }
-    .section--alt { background: var(--bg-alt); }
-    .section--dark { background: var(--navy); color: var(--white); }
-
-    .section-label {
-      display: inline-block;
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-
-    .section-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(1.6rem, 3vw, 2.1rem);
-      color: var(--navy);
-      line-height: 1.25;
-      margin-bottom: 40px;
-    }
-
-    .section--dark .section-title { color: var(--white); }
-
-    .divider {
-      width: 48px; height: 3px;
-      background: var(--accent);
-      margin: 12px 0 36px;
-      border-radius: 2px;
-    }
-
-    .tag {
-      display: inline-block;
-      background: var(--accent-muted);
-      color: var(--accent);
-      font-size: .78rem;
-      font-weight: 500;
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin: 3px 3px 3px 0;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      padding: 10px 22px;
-      border-radius: var(--radius);
-      font-size: .9rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all .18s ease;
-      text-decoration: none;
-      border: 2px solid transparent;
-    }
-    .btn-primary {
-      background: var(--accent);
-      color: var(--white);
-    }
-    .btn-primary:hover { background: #1d4ed8; text-decoration: none; }
-    .btn-outline {
-      background: transparent;
-      border-color: var(--border);
-      color: var(--text);
-    }
-    .btn-outline:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
-    .btn-outline-white {
-      background: transparent;
-      border-color: rgba(255,255,255,.5);
-      color: var(--white);
-    }
-    .btn-outline-white:hover { border-color: var(--white); text-decoration: none; }
-
-    /* ── Navigation ──────────────────────────────────────────────────────── */
-    #nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      height: var(--nav-h);
-      background: rgba(255,255,255,.96);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-    }
-
-    .nav-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 24px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .nav-brand {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--navy);
-      white-space: nowrap;
-      text-decoration: none;
-    }
-    .nav-brand:hover { text-decoration: none; }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-      list-style: none;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      font-size: .82rem;
-      font-weight: 500;
-      color: var(--muted);
-      padding: 6px 10px;
-      border-radius: 6px;
-      transition: color .15s, background .15s;
-      text-decoration: none;
-    }
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--accent);
-      background: var(--accent-muted);
-    }
-
-    .nav-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 6px;
-      color: var(--navy);
-    }
-
-    /* ── Hero ────────────────────────────────────────────────────────────── */
-    #hero {
-      background: linear-gradient(135deg, var(--navy) 0%, #1e3a5f 100%);
-      color: var(--white);
-      padding: 96px 0 80px;
-    }
-
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 40px;
-      align-items: center;
-    }
-
-    .hero-name {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 8px;
-    }
-
-    .hero-title {
-      font-size: 1rem;
-      font-weight: 400;
-      color: rgba(255,255,255,.75);
-      margin-bottom: 4px;
-    }
-
-    .hero-institution {
-      font-size: .95rem;
-      color: rgba(255,255,255,.65);
-      margin-bottom: 20px;
-    }
-
-    .hero-tagline {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,.88);
-      font-style: italic;
-      border-left: 3px solid var(--accent-light);
-      padding-left: 14px;
-      margin-bottom: 28px;
-      line-height: 1.6;
-    }
-
-    .hero-bio {
-      font-size: .95rem;
-      color: rgba(255,255,255,.8);
-      line-height: 1.8;
-      max-width: 600px;
-      margin-bottom: 28px;
-    }
-
-    .hero-keywords {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 32px;
-    }
-
-    .hero-keyword {
-      background: rgba(255,255,255,.12);
-      color: rgba(255,255,255,.9);
-      font-size: .78rem;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 100px;
-      border: 1px solid rgba(255,255,255,.2);
-    }
-
-    .hero-cta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .hero-photo-placeholder {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      background: rgba(255,255,255,.12);
-      border: 3px solid rgba(255,255,255,.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: .8rem;
-      color: rgba(255,255,255,.5);
-      text-align: center;
-      padding: 12px;
-    }
-
-    /* ── About ───────────────────────────────────────────────────────────── */
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 48px;
-      align-items: start;
-    }
-
-    .about-text p { margin-bottom: 16px; color: var(--text); }
-
-    .about-sidebar h3 {
-      font-size: .85rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .info-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      font-size: .9rem;
-      margin-bottom: 12px;
-      color: var(--text);
-    }
-
-    .info-icon {
-      width: 18px;
-      flex-shrink: 0;
-      margin-top: 2px;
-      color: var(--accent);
-    }
-
-    /* ── Timeline (Education) ────────────────────────────────────────────── */
-    .timeline { position: relative; padding-left: 28px; }
-    .timeline::before {
-      content: '';
-      position: absolute;
-      left: 7px; top: 6px; bottom: 6px;
-      width: 2px;
-      background: var(--border);
-    }
-
-    .timeline-item { position: relative; margin-bottom: 32px; }
-    .timeline-item::before {
-      content: '';
-      position: absolute;
-      left: -24px; top: 6px;
-      width: 12px; height: 12px;
-      border-radius: 50%;
-      background: var(--accent);
-      border: 2px solid var(--white);
-      box-shadow: 0 0 0 2px var(--accent);
-    }
-
-    .timeline-period {
-      font-size: .78rem;
-      font-weight: 600;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      margin-bottom: 3px;
-    }
-
-    .timeline-degree {
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 2px;
-    }
-
-    .timeline-inst {
-      font-size: .9rem;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-
-    .timeline-detail {
-      font-size: .88rem;
-      color: var(--text);
-      font-style: italic;
-    }
-
-    /* ── Research ────────────────────────────────────────────────────────── */
-    .research-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 24px;
-    }
-
-    .research-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      transition: box-shadow .2s, border-color .2s;
-    }
-
-    .research-card:hover {
-      box-shadow: var(--shadow-md);
-      border-color: var(--accent-light);
-    }
-
-    .research-card-icon {
-      width: 40px; height: 40px;
-      background: var(--accent-muted);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 14px;
-      font-size: 1.2rem;
-    }
-
-    .research-card h3 {
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-
-    .research-card p {
-      font-size: .88rem;
-      color: var(--muted);
-      margin-bottom: 12px;
-      line-height: 1.6;
-    }
-
-    .research-card ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .research-card ul li {
-      font-size: .84rem;
-      color: var(--text);
-      padding: 3px 0 3px 14px;
-      position: relative;
-      line-height: 1.5;
-    }
-
-    .research-card ul li::before {
-      content: '→';
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-size: .8rem;
-    }
-
-    /* ── Publications ────────────────────────────────────────────────────── */
-    .pub-filter {
-      display: flex;
-      gap: 8px;
-      flex-wrap: wrap;
-      margin-bottom: 32px;
-    }
-
-    .filter-btn {
-      padding: 6px 16px;
-      border-radius: 100px;
-      font-size: .82rem;
-      font-weight: 500;
-      border: 1.5px solid var(--border);
-      background: var(--white);
-      color: var(--muted);
-      cursor: pointer;
-      transition: all .15s;
-    }
-
-    .filter-btn.active,
-    .filter-btn:hover {
-      background: var(--accent);
-      border-color: var(--accent);
-      color: var(--white);
-    }
-
-    .pub-group { margin-bottom: 40px; }
-
-    .pub-group-title {
-      font-size: .78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: var(--muted);
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-
-    .pub-item {
-      display: flex;
-      gap: 16px;
-      margin-bottom: 20px;
-      padding: 18px 20px;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      transition: box-shadow .2s;
-    }
-
-    .pub-item:hover { box-shadow: var(--shadow-sm); }
-
-    .pub-item.selected {
-      border-left: 3px solid var(--accent);
-    }
-
-    .pub-number {
-      font-size: .8rem;
-      font-weight: 700;
-      color: var(--accent);
-      min-width: 24px;
-      padding-top: 2px;
-    }
-
-    .pub-content { flex: 1; }
-
-    .pub-badge {
-      display: inline-block;
-      background: var(--accent);
-      color: var(--white);
-      font-size: .68rem;
-      font-weight: 600;
-      padding: 2px 8px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      letter-spacing: .06em;
-      margin-bottom: 6px;
-    }
-
-    .pub-title {
-      font-size: .95rem;
-      font-weight: 500;
-      color: var(--navy);
-      margin-bottom: 5px;
-      line-height: 1.45;
-    }
-
-    .pub-authors {
-      font-size: .85rem;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-
-    .pub-venue {
-      font-size: .85rem;
-      color: var(--text);
-      font-style: italic;
-      margin-bottom: 6px;
-    }
-
-    .pub-links { display: flex; gap: 10px; flex-wrap: wrap; }
-
-    .pub-link {
-      font-size: .8rem;
-      font-weight: 500;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    .pub-link:hover { text-decoration: underline; }
-
-    /* ── Teaching ────────────────────────────────────────────────────────── */
-    .teaching-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
-
-    .card h3 {
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 4px;
-    }
-
-    .card .card-meta {
-      font-size: .82rem;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-
-    .card p, .card li {
-      font-size: .9rem;
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .card ul { padding-left: 18px; margin-top: 8px; }
-    .card ul li { margin-bottom: 6px; }
-
-    .course-tag {
-      display: inline-block;
-      background: var(--bg-section);
-      color: var(--navy);
-      font-size: .82rem;
-      font-weight: 500;
-      padding: 4px 12px;
-      border-radius: 100px;
-      margin: 4px 4px 4px 0;
-      border: 1px solid var(--border);
-    }
-
-    .philosophy-block {
-      background: var(--bg-alt);
-      border-left: 3px solid var(--accent);
-      padding: 20px 24px;
-      border-radius: 0 var(--radius) var(--radius) 0;
-      margin-bottom: 32px;
-    }
-
-    .philosophy-block p {
-      font-size: .95rem;
-      color: var(--text);
-      line-height: 1.8;
-    }
-
-    /* ── Skills / Instrumentation ────────────────────────────────────────── */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .skill-group {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 20px;
-    }
-
-    .skill-group h3 {
-      font-size: .78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: var(--accent);
-      margin-bottom: 12px;
-    }
-
-    .skill-group ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .skill-group ul li {
-      font-size: .88rem;
-      color: var(--text);
-      padding: 4px 0;
-      border-bottom: 1px solid var(--bg-section);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .skill-group ul li:last-child { border-bottom: none; }
-
-    .skill-dot {
-      width: 6px; height: 6px;
-      border-radius: 50%;
-      background: var(--accent);
-      flex-shrink: 0;
-    }
-
-    /* ── Software Projects ───────────────────────────────────────────────── */
-    .project-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-      margin-bottom: 20px;
-    }
-
-    .project-card h3 {
-      font-weight: 600;
-      font-size: 1rem;
-      color: var(--navy);
-      margin-bottom: 8px;
-    }
-
-    .project-card p, .project-card li {
-      font-size: .9rem;
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    .project-card ul {
-      padding-left: 18px;
-      margin-top: 8px;
-    }
-
-    .project-card ul li { margin-bottom: 6px; }
-
-    /* ── Collaborators ───────────────────────────────────────────────────── */
-    .collab-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 16px;
-    }
-
-    .collab-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 18px 20px;
-    }
-
-    .collab-card h4 {
-      font-weight: 600;
-      font-size: .95rem;
-      color: var(--navy);
-      margin-bottom: 3px;
-    }
-
-    .collab-card p {
-      font-size: .83rem;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    /* ── Service / Honors ────────────────────────────────────────────────── */
-    .list-card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
-
-    .list-card ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .list-card ul li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      padding: 10px 0;
-      border-bottom: 1px solid var(--bg-section);
-      font-size: .92rem;
-      color: var(--text);
-      line-height: 1.55;
-    }
-
-    .list-card ul li:last-child { border-bottom: none; }
-
-    .list-icon {
-      flex-shrink: 0;
-      margin-top: 2px;
-      color: var(--accent);
-      font-size: 1rem;
-    }
-
-    .honors-year {
-      font-size: .8rem;
-      font-weight: 600;
-      color: var(--accent);
-      min-width: 70px;
-    }
-
-    /* ── Two-column layout helper ────────────────────────────────────────── */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
-
-    /* ── Contact ─────────────────────────────────────────────────────────── */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 14px;
-      margin-bottom: 20px;
-    }
-
-    .contact-icon-wrap {
-      width: 40px; height: 40px;
-      background: var(--accent-muted);
-      border-radius: var(--radius);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-    }
-
-    .contact-icon-wrap svg { color: var(--accent); }
-
-    .contact-label {
-      font-size: .78rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--muted);
-      margin-bottom: 2px;
-    }
-
-    .contact-value {
-      font-size: .95rem;
-      color: var(--text);
-    }
-
-    .contact-form { display: flex; flex-direction: column; gap: 14px; }
-
-    .form-group { display: flex; flex-direction: column; gap: 5px; }
-
-    .form-group label {
-      font-size: .82rem;
-      font-weight: 500;
-      color: var(--muted);
-    }
-
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      padding: 10px 14px;
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius);
-      font-family: inherit;
-      font-size: .9rem;
-      color: var(--text);
-      background: var(--bg);
-      transition: border-color .15s;
-      resize: vertical;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-
-    /* ── Footer ──────────────────────────────────────────────────────────── */
-    footer {
-      background: var(--navy);
-      color: rgba(255,255,255,.6);
-      padding: 40px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 24px;
-      flex-wrap: wrap;
-    }
-
-    .footer-brand h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.1rem;
-      color: var(--white);
-      margin-bottom: 4px;
-    }
-
-    .footer-brand p {
-      font-size: .85rem;
-      max-width: 280px;
-      line-height: 1.6;
-    }
-
-    .footer-links h4 {
-      font-size: .78rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: rgba(255,255,255,.45);
-      margin-bottom: 10px;
-    }
-
-    .footer-links ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-links ul li { margin-bottom: 6px; }
-
-    .footer-links ul li a {
-      font-size: .85rem;
-      color: rgba(255,255,255,.6);
-      text-decoration: none;
-      transition: color .15s;
-    }
-
-    .footer-links ul li a:hover { color: var(--white); }
-
-    .footer-bottom {
-      margin-top: 32px;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,.1);
-      text-align: center;
-      font-size: .82rem;
-    }
-
-    /* ── Back to Top ─────────────────────────────────────────────────────── */
-    #back-top {
-      position: fixed;
-      bottom: 28px;
-      right: 28px;
-      width: 44px; height: 44px;
-      background: var(--accent);
-      color: var(--white);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: var(--shadow-md);
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity .25s;
-      cursor: pointer;
-      z-index: 90;
-      border: none;
-    }
-
-    #back-top.visible { opacity: 1; pointer-events: all; }
-
-    /* ── Animations ──────────────────────────────────────────────────────── */
-    .fade-up {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity .55s ease, transform .55s ease;
-    }
-    .fade-up.visible { opacity: 1; transform: translateY(0); }
-
-    /* ── Responsive ──────────────────────────────────────────────────────── */
-    @media (max-width: 768px) {
-      .hero-inner { grid-template-columns: 1fr; }
-      .hero-photo-placeholder { display: none; }
-      .about-grid { grid-template-columns: 1fr; }
-      .teaching-grid { grid-template-columns: 1fr; }
-      .contact-grid { grid-template-columns: 1fr; }
-      .two-col { grid-template-columns: 1fr; }
-      .nav-links { display: none; flex-direction: column; position: absolute; top: var(--nav-h); left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--border); padding: 12px 24px; }
-      .nav-links.open { display: flex; }
-      .nav-toggle { display: block; }
-    }
-
-    @media (max-width: 480px) {
-      .section { padding: 56px 0; }
-      .research-grid { grid-template-columns: 1fr; }
-    }
-
-    /* ── Skip link for a11y ──────────────────────────────────────────────── */
-    .skip-link {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      background: var(--accent);
-      color: white;
-      padding: 8px;
-      z-index: 9999;
-      transition: top .2s;
-    }
-    .skip-link:focus { top: 0; }
   </style>
 </head>
 <body>
 
-<!-- Skip nav for keyboard users -->
-<a class="skip-link" href="#main">Skip to main content</a>
-
-<!-- ═══════════════════════════ NAVIGATION ═══════════════════════════════ -->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-  <div class="nav-inner">
-    <a class="nav-brand" href="#hero" aria-label="Rajkamal Sah – home">Rajkamal Sah</a>
-
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <path d="M3 12h18M3 6h18M3 18h18"/>
-      </svg>
-    </button>
-
-    <ul class="nav-links" id="nav-links" role="list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#teaching">Teaching</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#service">Service</a></li>
-      <li><a href="#awards">Awards</a></li>
-      <li><a href="#collaborators">Collaborators</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="cv.pdf" class="btn btn-primary" style="padding:6px 14px;font-size:.8rem;" aria-label="Download CV">
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          CV
-        </a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<!-- ═══════════════════════════ HERO ══════════════════════════════════════ -->
-<header id="hero" role="banner">
-  <div class="container">
-    <div class="hero-inner">
-      <div>
-        <h1 class="hero-name">Rajkamal Sah</h1>
-        <p class="hero-title">PMRF Research Scholar &nbsp;·&nbsp; PhD Candidate, Aerospace Engineering</p>
-        <p class="hero-institution">Indian Institute of Science (IISc), Bengaluru</p>
-
-        <p class="hero-tagline">
-          Unraveling the aerodynamics of spinning bodies — through laser light,<br>shock waves, and computational insight.
-        </p>
-
-        <p class="hero-bio">
-          I am a doctoral researcher in the Department of Aerospace Engineering at IISc, working
-          under Prof. Gopalan Jagadeesh. My research investigates the unsteady aerodynamic flow
-          over spinning conical bodies using a combination of experimental techniques — Stereo PIV,
-          Schlieren imaging, oil-flow visualization — and high-fidelity CFD simulation. I am a
-          recipient of the Prime Minister Research Fellowship (PMRF), awarded by the Government
-          of India to the top doctoral scholars in science and engineering.
-        </p>
-
-        <div class="hero-keywords" aria-label="Research keywords">
-          <span class="hero-keyword">High-Speed Aerodynamics</span>
-          <span class="hero-keyword">Rotating Body Flows</span>
-          <span class="hero-keyword">Particle Image Velocimetry</span>
-          <span class="hero-keyword">Schlieren Imaging</span>
-          <span class="hero-keyword">Compressible CFD</span>
-          <span class="hero-keyword">Viscous Flow Instability</span>
-          <span class="hero-keyword">Experimental Fluid Mechanics</span>
-          <span class="hero-keyword">Supersonic Flows</span>
-        </div>
-
-        <div class="hero-cta">
-          <a href="cv.pdf" class="btn btn-primary" aria-label="Download CV PDF">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download CV
-          </a>
-          <a href="mailto:rajkamalsah49@gmail.com" class="btn btn-outline-white" aria-label="Send email">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            Email
-          </a>
-          <a href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" aria-label="ORCID profile">
-            ORCID
-          </a>
-          <a href="https://github.com/Rajkamalsah" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" aria-label="GitHub profile">
-            GitHub
-          </a>
-          <a href="https://www.linkedin.com/in/rajkamal-sah-3a4839221" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white" aria-label="LinkedIn profile">
-            LinkedIn
-          </a>
+  <!-- HEADER -->
+  <header class="top" id="top">
+    <div class="wrap topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">R</div>
+        <div class="meta">
+          <div class="name">Rajkamal Sah</div>
+          <div class="muted" style="font-size:13px">PMRF Research Scholar, Aerospace Engg., IISc Bangalore</div>
         </div>
       </div>
-
-      <div class="hero-photo-placeholder" role="img" aria-label="Photo of Rajkamal Sah (add headshot here)">
-        Add<br>Headshot<br>Photo
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#skills">Skills</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="row">
+        <button id="themeToggle" class="btn" type="button" aria-label="Toggle theme">🌙 Theme</button>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- ═══════════════════════════ MAIN CONTENT ══════════════════════════════ -->
-<main id="main">
-
-  <!-- ── ABOUT + EDUCATION ─────────────────────────────────────────────── -->
-  <section id="about" class="section" aria-labelledby="about-heading">
-    <div class="container">
-      <span class="section-label">Background</span>
-      <h2 class="section-title" id="about-heading">About</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="about-grid">
-        <div class="about-text fade-up">
-          <p>
-            I study the aerodynamics of rotating bodies at high speeds — a problem that sits at the
-            intersection of viscous flow theory, experimental measurement, and numerical simulation.
-            My doctoral thesis at IISc focuses on the unsteady flow field around spinning conical
-            geometries, with implications for the accurate prediction of forces and moments on
-            spinning projectiles, re-entry vehicles, and similar aerospace configurations.
-          </p>
-          <p>
-            My experimental work employs stereo and phase-locked Particle Image Velocimetry (PIV)
-            for three-component velocity field measurements, supplemented by Schlieren imaging and
-            oil-flow visualization in supersonic wind tunnels (Mach 2) at the National Aerospace
-            Laboratories (NAL), Bengaluru. On the computational side, I develop structured and
-            unstructured meshes and perform steady and transient RANS simulations using ANSYS
-            Fluent, integrating analytical 1D flow models with 3D CFD results to build physically
-            consistent interpretations of experimental data.
-          </p>
-          <p>
-            Before joining IISc, I completed an M.Tech in Cryogenic Engineering at IIT Kharagpur
-            and a B.Tech in Mechanical Engineering at NIT Manipur, which gave me a strong
-            foundation in thermodynamics, fluid mechanics, and engineering design.
-          </p>
-
-          <h3 style="font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:32px 0 20px;">Education</h3>
-          <div class="timeline" aria-label="Education timeline">
-            <div class="timeline-item">
-              <div class="timeline-period">Aug 2019 – Present</div>
-              <div class="timeline-degree">PhD, Aerospace Engineering</div>
-              <div class="timeline-inst">Indian Institute of Science (IISc), Bengaluru</div>
-              <div class="timeline-detail">Advisor: Prof. Gopalan Jagadeesh</div>
-              <div class="timeline-detail" style="margin-top:4px;">Thesis: <em>Investigation on Unsteady Aerodynamic Flow Over Spinning Conical Bodies</em></div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-period">Aug 2017 – May 2019</div>
-              <div class="timeline-degree">M.Tech, Cryogenic Engineering</div>
-              <div class="timeline-inst">Indian Institute of Technology (IIT) Kharagpur</div>
-            </div>
-            <div class="timeline-item" style="margin-bottom:0">
-              <div class="timeline-period">Jul 2013 – May 2017</div>
-              <div class="timeline-degree">B.Tech, Mechanical Engineering</div>
-              <div class="timeline-inst">National Institute of Technology (NIT) Manipur</div>
-            </div>
-          </div>
-        </div>
-
-        <aside class="about-sidebar fade-up" aria-label="Contact and profile information">
-          <div style="background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius);padding:22px;">
-            <h3>Contact</h3>
-            <div class="info-item">
-              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <a href="mailto:rajkamalsah49@gmail.com" style="font-size:.9rem;color:var(--accent);">rajkamalsah49@gmail.com</a>
-            </div>
-            <div class="info-item">
-              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span style="font-size:.9rem;">Dept. of Aerospace Engineering, IISc, Bengaluru – 560012, India</span>
-            </div>
-
-            <h3 style="margin-top:20px;">Profiles</h3>
-            <div class="info-item">
-              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-              <a href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noopener noreferrer" style="font-size:.9rem;">ORCID</a>
-            </div>
-            <div class="info-item">
-              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-              <a href="https://github.com/Rajkamalsah" target="_blank" rel="noopener noreferrer" style="font-size:.9rem;">github.com/Rajkamalsah</a>
-            </div>
-            <div class="info-item">
-              <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-              <a href="https://www.linkedin.com/in/rajkamal-sah-3a4839221" target="_blank" rel="noopener noreferrer" style="font-size:.9rem;">LinkedIn</a>
-            </div>
-
-            <h3 style="margin-top:20px;">Fellowship</h3>
-            <div style="background:var(--accent-muted);border-radius:6px;padding:12px 14px;margin-top:6px;">
-              <div style="font-weight:600;font-size:.9rem;color:var(--navy);">Prime Minister Research Fellow</div>
-              <div style="font-size:.82rem;color:var(--muted);margin-top:2px;">PMRF · Govt. of India · 2019–2024</div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── RESEARCH ──────────────────────────────────────────────────────── -->
-  <section id="research" class="section section--alt" aria-labelledby="research-heading">
-    <div class="container">
-      <span class="section-label">Focus Areas</span>
-      <h2 class="section-title" id="research-heading">Research</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="research-grid">
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">🌀</div>
-          <h3>Rotating Body Aerodynamics</h3>
-          <p>Investigating the unsteady viscous flow field around spinning conical and cone-cylinder bodies, with a focus on lift-up phenomena, flow instability, and Magnus-type effects.</p>
-          <ul>
-            <li>Spinning cone/cone-cylinder experiments in enclosed wind tunnel sections</li>
-            <li>Identification of viscous lift-up and flow instability mechanisms</li>
-            <li>Encoder-based phase-locked measurement systems (Arduino + IR sensors)</li>
-          </ul>
-        </div>
-
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">🔬</div>
-          <h3>Experimental Flow Diagnostics</h3>
-          <p>Applying optical and flow visualization methods to capture three-dimensional, time-resolved velocity and density fields in complex aerodynamic configurations.</p>
-          <ul>
-            <li>Stereo and phase-locked PIV for 3-component velocity fields</li>
-            <li>Dual-pulse Nd:YAG laser and high-speed CCD/CMOS camera systems</li>
-            <li>Schlieren imaging and oil-flow visualization</li>
-          </ul>
-        </div>
-
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">💨</div>
-          <h3>High-Speed & Compressible Flows</h3>
-          <p>Studying aerodynamics in supersonic and transonic regimes relevant to projectile and re-entry vehicle design, using both experimental wind-tunnel facilities and CFD.</p>
-          <ul>
-            <li>Supersonic tunnel experiments at Mach 2 (NAL, Bengaluru)</li>
-            <li>Steady and transient RANS simulations (ANSYS Fluent)</li>
-            <li>Structured/unstructured mesh generation (ICEM CFD)</li>
-          </ul>
-        </div>
-
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">💻</div>
-          <h3>Computational Fluid Dynamics</h3>
-          <p>Developing and applying CFD frameworks to simulate subsonic and supersonic flows around rotating geometries, and integrating analytical models with 3D simulation results.</p>
-          <ul>
-            <li>Integrated 1D analytical and transient 3D CFD interpretation</li>
-            <li>Subsonic and supersonic regime simulations</li>
-            <li>GPU-accelerated image processing pipelines for Schlieren data</li>
-          </ul>
-        </div>
-
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">📊</div>
-          <h3>Data-Driven Flow Analysis</h3>
-          <p>Developing computational tools that leverage machine learning and GPU acceleration to extract quantitative information from large experimental datasets.</p>
-          <ul>
-            <li>Sub-pixel shock angle estimation from Schlieren sequences</li>
-            <li>GPU-accelerated shock tracking (flow-hpc-shocktrack)</li>
-            <li>Transformer-based LLMs for scientific document summarization</li>
-          </ul>
-        </div>
-
-        <div class="research-card fade-up">
-          <div class="research-card-icon" aria-hidden="true">🛠</div>
-          <h3>Instrumentation & Prototyping</h3>
-          <p>Designing custom hardware and synchronization electronics for rotating-model experiments, including motor control systems and encoder-based timing setups.</p>
-          <ul>
-            <li>BLDC motor control and high-speed rotating rigs</li>
-            <li>Arduino-based encoder synchronization for phase-locked measurements</li>
-            <li>CNC machining and CATIA-based model design</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PUBLICATIONS ──────────────────────────────────────────────────── -->
-  <section id="publications" class="section" aria-labelledby="pub-heading">
-    <div class="container">
-      <span class="section-label">Scholarly Work</span>
-      <h2 class="section-title" id="pub-heading">Publications</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <!-- Filter buttons -->
-      <div class="pub-filter" role="group" aria-label="Filter publications by type">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="journal">Journal Articles</button>
-        <button class="filter-btn" data-filter="conference">Conference Papers</button>
-      </div>
-
-      <!-- Selected Publications banner -->
-      <div style="background:var(--accent-muted);border-left:3px solid var(--accent);border-radius:0 var(--radius) var(--radius) 0;padding:14px 20px;margin-bottom:32px;font-size:.9rem;color:var(--navy);">
-        <strong>Selected publications</strong> are highlighted below. Full bibliography follows.
-      </div>
-
-      <!-- Journal Articles -->
-      <div class="pub-group" data-group="journal">
-        <div class="pub-group-title">Journal Articles</div>
-
-        <div class="pub-item selected" data-type="journal">
-          <div class="pub-number">J1</div>
-          <div class="pub-content">
-            <span class="pub-badge">Selected</span>
-            <div class="pub-title">Experimental investigation of lift-up and instability of the viscous flow induced by a rotating cone–cylinder in an enclosure</div>
-            <div class="pub-authors"><strong>Sah, R.</strong>, Tambe, S. S., &amp; Jagadeesh, G. (2025)</div>
-            <div class="pub-venue"><em>Physics of Fluids</em>, 37, 074108.</div>
-            <div class="pub-links">
-              <a class="pub-link" href="https://doi.org/10.1063/5.0273987" target="_blank" rel="noopener noreferrer">DOI: 10.1063/5.0273987</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Conference Papers -->
-      <div class="pub-group" data-group="conference">
-        <div class="pub-group-title">Conference Proceedings</div>
-
-        <div class="pub-item" data-type="conference">
-          <div class="pub-number">C1</div>
-          <div class="pub-content">
-            <div class="pub-title">Unsteady numerical studies on a spinning cone at different flow regimes</div>
-            <div class="pub-authors"><strong>Sah, R.</strong>, Narayanan, S., Venkatakrishnan, L., &amp; Jagadeesh, G. (2025)</div>
-            <div class="pub-venue"><em>Proceedings of the 34th International Symposium on Shock Waves (ISSW34)</em>, Singapore. Springer Nature.</div>
-          </div>
-        </div>
-
-        <div class="pub-item" data-type="conference">
-          <div class="pub-number">C2</div>
-          <div class="pub-content">
-            <div class="pub-title">Numerical studies on the aerodynamics of a high-speed spinning projectile</div>
-            <div class="pub-authors"><strong>Sah, R.</strong>, &amp; Jagadeesh, G. (2022)</div>
-            <div class="pub-venue"><em>24th International Shock Interaction Symposium</em>. Springer Nature.</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── TEACHING ──────────────────────────────────────────────────────── -->
-  <section id="teaching" class="section section--alt" aria-labelledby="teaching-heading">
-    <div class="container">
-      <span class="section-label">Pedagogy</span>
-      <h2 class="section-title" id="teaching-heading">Teaching</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <h3 style="font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:16px;">Teaching Philosophy</h3>
-      <div class="philosophy-block fade-up">
+  <!-- HERO -->
+  <div class="wrap hero">
+    <div class="grid cols-3">
+      <div class="card">
+        <h1>Assistant Professor Candidate</h1>
         <p>
-          I believe that engineering students learn best when fundamental theory is connected
-          directly to physical observation. In fluid mechanics, a simple flow visualization —
-          a streak of oil on a surface, a Schlieren shadowgraph of a shock wave — can make
-          abstract concepts immediately tangible. I aim to cultivate this physical intuition
-          alongside mathematical rigor. I am committed to making technical material accessible
-          without sacrificing depth, and to building an environment where students feel
-          comfortable asking questions and testing ideas. Laboratory sessions and hands-on
-          problem-solving are central to how I teach.
+          Aspiring to contribute as an <strong>Assistant Professor</strong> in Aerospace/Mechanical Engineering by combining expertise in
+          <strong>aerodynamics</strong>, experimental fluid dynamics (<strong>PIV, Schlieren, Oil Flow</strong>), and computational modeling (<strong>CFD, LES</strong>) with a strong passion for teaching, mentoring, and research leadership.
         </p>
-      </div>
-
-      <h3 style="font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:20px;">Positions Held</h3>
-      <div class="teaching-grid">
-        <div class="card fade-up">
-          <h3>Guest Faculty</h3>
-          <div class="card-meta">Ramaiah Polytechnic, Bengaluru</div>
-          <ul>
-            <li>Taught undergraduate-level Mathematics in the context of Fluid Mechanics</li>
-            <li>Delivered lectures, conducted tutorials, and evaluated student performance</li>
-          </ul>
-        </div>
-
-        <div class="card fade-up">
-          <h3>Teaching Assistant</h3>
-          <div class="card-meta">Indian Institute of Science (IISc), Bengaluru</div>
-          <ul>
-            <li>Assisted in undergraduate and postgraduate fluid mechanics and applied physics courses</li>
-            <li>Conducted laboratory sessions, tutorials, grading, and student mentoring</li>
-          </ul>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" href="#publications">📚 View Publications</a>
+          <a class="btn" href="#teaching">🎓 Teaching</a>
+          <a class="btn" href="Rajkamal_Sah_CV.pdf" download>⬇️ Download CV</a>
         </div>
       </div>
-
-      <h3 style="font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:36px 0 16px;">Courses Competent to Teach</h3>
-      <div class="fade-up">
-        <span class="course-tag">Fluid Mechanics</span>
-        <span class="course-tag">Compressible Flow</span>
-        <span class="course-tag">Experimental Methods in Fluid Mechanics</span>
-        <span class="course-tag">Aerodynamics</span>
-        <span class="course-tag">Boundary Layer Theory</span>
-        <span class="course-tag">CFD for Aerospace Applications</span>
-        <span class="course-tag">Measurement Techniques in Aerospace Engineering</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── PROJECTS / SOFTWARE ──────────────────────────────────────────── -->
-  <section id="projects" class="section" aria-labelledby="projects-heading">
-    <div class="container">
-      <span class="section-label">Software & Tools</span>
-      <h2 class="section-title" id="projects-heading">Computational Projects</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="project-card fade-up">
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
-          <span style="background:var(--navy);color:var(--white);font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:4px;font-family:monospace;">flow-hpc-shocktrack</span>
-          <span class="tag">GPU-Accelerated</span>
-          <span class="tag">Python</span>
-          <span class="tag">Open Source</span>
-        </div>
-        <h3>GPU-Accelerated Schlieren Shock Tracking System</h3>
-        <ul>
-          <li>Developed an end-to-end Schlieren shock-tracking pipeline with sub-pixel shock angle estimation.</li>
-          <li>Implemented GPU-accelerated image processing routines for high-throughput batch analysis of Schlieren sequences.</li>
-        </ul>
-        <div style="margin-top:12px;">
-          <a href="https://github.com/Rajkamalsah" class="pub-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
+      <div class="card">
+        <h3>Contact</h3>
+        <div class="contactgrid">
+          <div>📍 Bangalore, Karnataka – 560012, India</div>
+          <div><a href="tel:+917349669847">📞 +91-7349669847</a></div>
+          <div><a href="mailto:rajkamalsah@iisc.ac.in">✉️ rajkamalsah@iisc.ac.in</a></div>
+          <div><a href="https://www.linkedin.com/in/rajkamalsah/" target="_blank" rel="noreferrer">🔗 LinkedIn</a></div>
+          <div><a href="https://github.com/Rajkamalsah?tab=repositories" target="_blank" rel="noreferrer">💻 GitHub</a></div>
+          <div><a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noreferrer">🎓 Google Scholar</a></div>
+          <div><a href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noreferrer">🆔 ORCID</a></div>
         </div>
       </div>
-
-      <div class="project-card fade-up">
-        <div style="display:flex;align-items:center;gap:12px;margin-bottom:10px;">
-          <span class="tag">Deep Learning</span>
-          <span class="tag">NLP</span>
-          <span class="tag">PyTorch</span>
-          <span class="tag">Hugging Face</span>
-        </div>
-        <h3>Text Summarization Using Large Language Models</h3>
-        <ul>
-          <li>Fine-tuned transformer-based LLMs using PyTorch and the Hugging Face ecosystem for scientific document summarization.</li>
-          <li>Evaluated summarization quality on aerospace and engineering research corpora.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── TECHNICAL SKILLS ──────────────────────────────────────────────── -->
-  <section id="skills" class="section section--alt" aria-labelledby="skills-heading">
-    <div class="container">
-      <span class="section-label">Expertise</span>
-      <h2 class="section-title" id="skills-heading">Technical Skills &amp; Instrumentation</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="skills-grid">
-        <div class="skill-group fade-up">
-          <h3>Experimental</h3>
-          <ul>
-            <li><span class="skill-dot" aria-hidden="true"></span>Particle Image Velocimetry (PIV)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Stereo PIV</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Schlieren Imaging</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Oil-Flow Visualization</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Phase-Locked Measurements</li>
-          </ul>
-        </div>
-
-        <div class="skill-group fade-up">
-          <h3>Facilities</h3>
-          <ul>
-            <li><span class="skill-dot" aria-hidden="true"></span>Low-speed wind tunnels</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Supersonic wind tunnels (NAL)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Dual-pulse Nd:YAG laser systems</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>High-speed CCD/CMOS cameras</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Synchronization electronics</li>
-          </ul>
-        </div>
-
-        <div class="skill-group fade-up">
-          <h3>Computational</h3>
-          <ul>
-            <li><span class="skill-dot" aria-hidden="true"></span>ANSYS Fluent (CFD)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>ICEM CFD (meshing)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>1D Flow Modelling</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Python</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>GPU computing</li>
-          </ul>
-        </div>
-
-        <div class="skill-group fade-up">
-          <h3>Design & Hardware</h3>
-          <ul>
-            <li><span class="skill-dot" aria-hidden="true"></span>CATIA (CAD)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>CNC Machining</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Arduino (microcontrollers)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>BLDC Motor Control</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Encoders &amp; Timing</li>
-          </ul>
-        </div>
-
-        <div class="skill-group fade-up">
-          <h3>Machine Learning</h3>
-          <ul>
-            <li><span class="skill-dot" aria-hidden="true"></span>Deep Learning</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Large Language Models (LLMs)</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>PyTorch</li>
-            <li><span class="skill-dot" aria-hidden="true"></span>Hugging Face</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── SERVICE ──────────────────────────────────────────────────────── -->
-  <section id="service" class="section" aria-labelledby="service-heading">
-    <div class="container">
-      <span class="section-label">Community</span>
-      <h2 class="section-title" id="service-heading">Professional Service</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="two-col">
-        <div class="list-card fade-up">
-          <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:14px;">Peer Review</div>
-          <ul>
-            <li>
-              <span class="list-icon" aria-hidden="true">📋</span>
-              <span>Peer Reviewer, <em>Physics of Fluids</em> (AIP Publishing)</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="list-card fade-up">
-          <div style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:14px;">Volunteering</div>
-          <ul>
-            <li>
-              <span class="list-icon" aria-hidden="true">🛫</span>
-              <span>Volunteer, AIAA Hypersonics Conference 2023</span>
-            </li>
-            <li>
-              <span class="list-icon" aria-hidden="true">🔭</span>
-              <span>Volunteer, Hypersonics Laboratory Open Day, IISc</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── AWARDS / HONORS ───────────────────────────────────────────────── -->
-  <section id="awards" class="section section--alt" aria-labelledby="awards-heading">
-    <div class="container">
-      <span class="section-label">Recognition</span>
-      <h2 class="section-title" id="awards-heading">Awards &amp; Honors</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="list-card fade-up" style="max-width:600px;">
-        <ul>
-          <li>
-            <span class="honors-year">2019–2024</span>
-            <span><strong>Prime Minister Research Fellowship (PMRF)</strong> — Government of India. Awarded to doctoral scholars demonstrating exceptional research potential in science and engineering.</span>
-          </li>
-          <li>
-            <span class="honors-year">2017</span>
-            <span><strong>GATE Qualified</strong> — Ministry of Education, Government of India. National-level examination for admission to postgraduate engineering programs.</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── COLLABORATORS ─────────────────────────────────────────────────── -->
-  <section id="collaborators" class="section" aria-labelledby="collab-heading">
-    <div class="container">
-      <span class="section-label">Network</span>
-      <h2 class="section-title" id="collab-heading">Collaborators</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="collab-grid">
-        <div class="collab-card fade-up">
-          <h4>Prof. Gopalan Jagadeesh</h4>
-          <p>Professor, Dept. of Aerospace Engineering<br>Indian Institute of Science, Bengaluru<br><em>Doctoral Advisor</em></p>
-        </div>
-
-        <div class="collab-card fade-up">
-          <h4>Dr. Sumit Sunil Tambe</h4>
-          <p>Assistant Professor<br>Indian Institute of Technology (IIT) Madras</p>
-        </div>
-
-        <div class="collab-card fade-up">
-          <h4>Dr. L. Venkatakrishnan</h4>
-          <p>Chief Scientist<br>National Aerospace Laboratories (NAL), Bengaluru</p>
-        </div>
-
-        <div class="collab-card fade-up">
-          <h4>Dr. Sathianarayan</h4>
-          <p>Head Scientist<br>National Aerospace Laboratories (NAL), Bengaluru</p>
-        </div>
-
-        <div class="collab-card fade-up">
-          <h4>Dr. P. Suryanarayan</h4>
-          <p>Head Scientist<br>National Aerospace Laboratories (NAL), Bengaluru</p>
-        </div>
-
-        <div class="collab-card fade-up">
-          <h4>Dr. Shrestha Ranjan</h4>
-          <p>Researcher<br>Indian Institute of Science, Bengaluru</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── CONTACT ───────────────────────────────────────────────────────── -->
-  <section id="contact" class="section section--alt" aria-labelledby="contact-heading">
-    <div class="container">
-      <span class="section-label">Get in Touch</span>
-      <h2 class="section-title" id="contact-heading">Contact</h2>
-      <div class="divider" aria-hidden="true"></div>
-
-      <div class="contact-grid">
-        <div>
-          <p style="font-size:.95rem;color:var(--muted);margin-bottom:28px;">
-            I welcome inquiries about research collaborations, speaking invitations, and
-            prospective students or research interns interested in experimental aerodynamics,
-            high-speed flows, and flow diagnostics.
-          </p>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Email</div>
-              <div class="contact-value"><a href="mailto:rajkamalsah49@gmail.com">rajkamalsah49@gmail.com</a></div>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">Office Address</div>
-              <div class="contact-value">Department of Aerospace Engineering<br>Indian Institute of Science (IISc)<br>Bengaluru – 560 012, India</div>
-            </div>
-          </div>
-
-          <div class="contact-item">
-            <div class="contact-icon-wrap" aria-hidden="true">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-            </div>
-            <div>
-              <div class="contact-label">ORCID</div>
-              <div class="contact-value"><a href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noopener noreferrer">0009-0006-0560-2539</a></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Contact form -->
-        <div>
-          <div style="font-size:.85rem;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px;">Send a Message</div>
-          <form class="contact-form" id="contact-form" onsubmit="handleContactForm(event)" aria-label="Contact form" novalidate>
-            <div class="form-group">
-              <label for="cf-name">Name</label>
-              <input type="text" id="cf-name" name="name" placeholder="Your full name" required autocomplete="name" />
-            </div>
-            <div class="form-group">
-              <label for="cf-email">Email</label>
-              <input type="email" id="cf-email" name="email" placeholder="your@email.com" required autocomplete="email" />
-            </div>
-            <div class="form-group">
-              <label for="cf-subject">Subject</label>
-              <select id="cf-subject" name="subject">
-                <option value="">Select a topic…</option>
-                <option>Research collaboration</option>
-                <option>Speaking invitation</option>
-                <option>Student/intern inquiry</option>
-                <option>General inquiry</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="cf-message">Message</label>
-              <textarea id="cf-message" name="message" rows="4" placeholder="Your message…" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
-              Send Message
-            </button>
-            <p id="cf-feedback" style="font-size:.85rem;color:var(--accent);display:none;margin-top:8px;" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ═══════════════════════════ FOOTER ═══════════════════════════════════ -->
-<footer role="contentinfo">
-  <div class="container">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <h3>Rajkamal Sah</h3>
-        <p>PhD Candidate, Aerospace Engineering<br>Indian Institute of Science, Bengaluru</p>
-      </div>
-
-      <div class="footer-links">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#teaching">Teaching</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-links">
-        <h4>Profiles</h4>
-        <ul>
-          <li><a href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noopener noreferrer">ORCID</a></li>
-          <li><a href="https://github.com/Rajkamalsah" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/rajkamal-sah-3a4839221" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-          <li><a href="mailto:rajkamalsah49@gmail.com">Email</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <p>© <span id="yr"></span> Rajkamal Sah · Last updated March 2026 · Indian Institute of Science, Bengaluru</p>
     </div>
   </div>
-</footer>
 
-<!-- Back to top button -->
-<button id="back-top" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
-</button>
+  <!-- ABOUT & EDUCATION -->
+  <section id="about">
+    <div class="wrap two">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I investigate rotating-body aerodynamics with integrated experimentation (PIV, Schlieren, oil flow), computation (CFD), and data-driven analysis (POD/SPOD). I enjoy teaching core courses in fluid mechanics, thermodynamics, and gas dynamics, and mentoring student research.
+        </p>
+      </div>
+      <div class="card">
+        <h2>Education</h2>
+        <ul class="list" style="display:grid;gap:10px">
+          <li>
+            <div><strong>Indian Institute of Science (IISc)</strong> — Ph.D., Aerospace Engineering</div>
+            <div class="muted">Bangalore, India • Aug 2019 – Present</div>
+          </li>
+          <li>
+            <div><strong>IIT Kharagpur</strong> — M.Tech., Mechanical Engineering</div>
+            <div class="muted">Kharagpur, India • Aug 2017 – May 2019</div>
+          </li>
+          <li>
+            <div><strong>NIT Manipur</strong> — B.Tech., Mechanical Engineering</div>
+            <div class="muted">Manipur, India • July 2013 – May 2017</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<!-- ═══════════════════════════ JAVASCRIPT ════════════════════════════════ -->
-<script>
-  /* ── Year ── */
-  document.getElementById('yr').textContent = new Date().getFullYear();
+  <!-- RESEARCH CONTRIBUTIONS -->
+  <section id="research">
+    <div class="wrap">
+      <h2>Research Contributions</h2>
+      <div class="two">
+        <div class="card">
+          <h3>Experimental Aerodynamics of Spinning Bodies</h3>
+          <p>Wind-tunnel campaigns on rotating cone and cone–cylinder models using Schlieren imaging, oil-flow visualization, and stereoscopic PIV. Extracted coherent structures, shock oscillations, and transition mechanisms.</p>
+          <div class="chips"><span class="chip">Schlieren</span><span class="chip">S-PIV</span><span class="chip">Transition</span><span class="chip">Shock dynamics</span></div>
+        </div>
+        <div class="card">
+          <h3>Computational Fluid Dynamics (CFD) and Flow Stability</h3>
+          <p>Transient simulations in ANSYS Fluent/ICEM-CFD to analyze boundary layers, instabilities, and thermal effects around rotating geometries; validated against experiments.</p>
+          <div class="chips"><span class="chip">ANSYS Fluent</span><span class="chip">ICEM-CFD</span><span class="chip">Validation</span></div>
+        </div>
+        <div class="card">
+          <h3>Data-driven Flow Analysis</h3>
+          <p>Applied POD and SPOD to PIV datasets to identify energy-dominant modes and frequency-resolved coherent structures.</p>
+          <div class="chips"><span class="chip">POD</span><span class="chip">SPOD</span><span class="chip">Modal analysis</span></div>
+        </div>
+        <div class="card">
+          <h3>Instrumentation and Measurement Innovation</h3>
+          <p>Built an IR-based encoder for real-time phase tracking of spinning models; integrated Python/Arduino and DSP pipelines for synchronization.</p>
+          <div class="chips"><span class="chip">Arduino</span><span class="chip">IR encoder</span><span class="chip">DSP</span></div>
+        </div>
+        <div class="card">
+          <h3>Multidisciplinary Extensions</h3>
+          <p>CAD design (CATIA V5), FEM–CFD coupling in ANSYS Mechanical for aero-structural assessment; ML/LLM tooling for research workflows.</p>
+          <div class="chips"><span class="chip">CATIA</span><span class="chip">FEM–CFD</span><span class="chip">LLMs</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  /* ── Nav toggle (mobile) ── */
-  const navToggle = document.getElementById('nav-toggle');
-  const navLinks  = document.getElementById('nav-links');
-  navToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    navToggle.setAttribute('aria-expanded', String(open));
-  });
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="wrap">
+      <h2>Publications</h2>
+      <div class="card pub">
+        <div class="muted">[J.1] Journal</div>
+        <div><strong>Rajkamal Sah et al.</strong> (2025). Experimental investigation of lift-up and instability of the viscous flow induced by a rotating cone-cylinder in an enclosure. <em>Physics of Fluids</em>. DOI: <a href="https://doi.org/10.1063/5.0273987" target="_blank" rel="noreferrer">10.1063/5.0273987</a>. <a href="https://doi.org/10.48550/arXiv.2505.23076" target="_blank" rel="noreferrer">Open</a></div>
+      </div>
+      <div class="card pub" style="margin-top:12px">
+        <div class="muted">[C.1] Conference</div>
+        <div><strong>Rajkamal Sah et al.</strong> (2023). Unsteady Numerical Studies on Spinning Cone at Different Flow Regimes. <em>ISSW34</em>, Springer Nature. (Proceedings entry)</div>
+      </div>
+      <div class="card pub" style="margin-top:12px">
+        <div class="muted">[C.2] Conference</div>
+        <div><strong>Rajkamal Sah and Co-authors</strong> (2021). Numerical Studies on the Aerodynamics of a High-Speed Spinning Projectile. <em>24th International Shock Interaction Symposium</em>, Springer. DOI: <a href="https://doi.org/10.1007/978-981-97-6099-2_9" target="_blank" rel="noreferrer">10.1007/978-981-97-6099-2_9</a></div>
+      </div>
+    </div>
+  </section>
 
-  /* ── Active nav on scroll ── */
-  const sections = document.querySelectorAll('section[id], header[id]');
-  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+  <!-- TEACHING -->
+  <section id="teaching">
+    <div class="wrap">
+      <h2>Teaching Experience</h2>
+      <div class="two">
+        <div class="card">
+          <h3>Indian Institute of Science (IISc)</h3>
+          <div class="muted">Teaching Assistant – Gas Dynamics • Aug 2021 – Dec 2021</div>
+          <ul>
+            <li>Tutorials, lab demonstrations, evaluation of assignments</li>
+            <li>Supplementary lectures on compressible flow & diagnostics</li>
+            <li>Mentored project groups and academic counseling</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Ramaiah Polytechnic</h3>
+          <div class="muted">Lecturer – Mechanical Engineering • July 2016 – June 2017</div>
+          <ul>
+            <li>Courses: Fluid Mechanics, Thermodynamics, Gas Dynamics</li>
+            <li>Supervised labs and student design projects</li>
+            <li>Faculty mentor for student development</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        navAnchors.forEach(a => {
-          a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id);
-        });
-      }
-    });
-  }, { rootMargin: '-40% 0px -55% 0px' });
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="card">
+          <h3>Experimental Techniques</h3>
+          <div class="chips">
+            <span class="chip">PIV (Planar & Stereo)</span><span class="chip">Schlieren Imaging</span><span class="chip">Oil Flow Visualization</span><span class="chip">IR Thermography</span><span class="chip">Laser Diagnostics</span><span class="chip">High-speed Imaging</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Computational Tools</h3>
+          <div class="chips">
+            <span class="chip">ANSYS Fluent</span><span class="chip">ICEM-CFD</span><span class="chip">CATIA V5</span><span class="chip">FEM–CFD Coupling</span><span class="chip">Design of Experiments</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Programming & Data Analysis</h3>
+          <div class="chips">
+            <span class="chip">Python (NumPy, Pandas, Matplotlib, OpenCV, SciPy)</span><span class="chip">MATLAB</span><span class="chip">TensorFlow / Scikit-learn</span><span class="chip">Signal Processing</span><span class="chip">LLM tooling</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Teaching & Professional</h3>
+          <div class="chips">
+            <span class="chip">Curriculum design</span><span class="chip">Lab supervision</span><span class="chip">Student mentoring</span><span class="chip">Academic counseling</span><span class="chip">Research writing</span><span class="chip">Scientific visualization</span><span class="chip">Conference presentations</span><span class="chip">MySQL / Excel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  sections.forEach(s => observer.observe(s));
+  <!-- HONORS -->
+  <section id="honors">
+    <div class="wrap">
+      <h2>Honors & Awards</h2>
+      <div class="two">
+        <div class="card">
+          <strong>Prime Minister’s Research Fellowship (PMRF)</strong>
+          <div class="muted">Government of India • 2019 – 2024</div>
+        </div>
+        <div class="card">
+          <strong>JNV Merit (Residential Schooling)</strong>
+          <div class="muted">Navodaya Vidyalaya Samiti • 2006 – 2012</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  /* ── Back-to-top visibility ── */
-  const backTop = document.getElementById('back-top');
-  window.addEventListener('scroll', () => {
-    backTop.classList.toggle('visible', window.scrollY > 400);
-  }, { passive: true });
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+      <div class="card">
+        <div class="contactgrid">
+          <div>📍 Bangalore, Karnataka – 560012, India</div>
+          <div><a href="tel:+917349669847">📞 +91-7349669847</a></div>
+          <div><a href="mailto:rajkamalsah@iisc.ac.in">✉️ rajkamalsah@iisc.ac.in</a></div>
+        </div>
+        <div class="row" style="margin-top:10px">
+          <a class="btn" href="https://www.linkedin.com/in/rajkamalsah/" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+          <a class="btn" href="https://github.com/Rajkamalsah?tab=repositories" target="_blank" rel="noreferrer">💻 GitHub</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noreferrer">🎓 Google Scholar</a>
+          <a class="btn" href="https://orcid.org/0009-0006-0560-2539" target="_blank" rel="noreferrer">🆔 ORCID</a>
+          <a class="btn" href="Rajkamal_Sah_CV.pdf" download>⬇️ Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  /* ── Fade-up animations ── */
-  const fadeEls = document.querySelectorAll('.fade-up');
-  const fadeObserver = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); fadeObserver.unobserve(e.target); } });
-  }, { threshold: 0.1 });
-  fadeEls.forEach(el => fadeObserver.observe(el));
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap row" style="justify-content:space-between">
+      <div>© <span id="year"></span> Rajkamal Sah. All rights reserved.</div>
+      <a class="btn" href="#top">⬆️ Back to top</a>
+    </div>
+  </footer>
 
-  /* ── Publication filter ── */
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
+  <script>
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-      document.querySelectorAll('.pub-group').forEach(group => {
-        if (filter === 'all') {
-          group.style.display = '';
-        } else {
-          group.style.display = (group.dataset.group === filter) ? '' : 'none';
-        }
+    // theme toggle (auto / dark / light cycle)
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    function currentMode(){return document.documentElement.getAttribute('data-theme')||'auto'}
+    function apply(mode){
+      if(mode==='auto'){root.removeAttribute('data-theme');}
+      else{root.setAttribute('data-theme',mode);}
+      localStorage.setItem('theme-mode',mode);
+      if(btn) btn.textContent = mode==='dark' ? '☀️ Theme' : (mode==='light' ? '🌙 Theme' : '🌓 Theme');
+    }
+    apply(localStorage.getItem('theme-mode')||'auto');
+    if(btn){
+      btn.addEventListener('click',()=>{
+        const next = currentMode()==='auto' ? 'dark' : currentMode()==='dark' ? 'light' : 'auto';
+        apply(next);
       });
-    });
-  });
-
-  /* ── Contact form (client-side only; wire to backend or Formspree as needed) ── */
-  function handleContactForm(e) {
-    e.preventDefault();
-    const fb = document.getElementById('cf-feedback');
-    fb.textContent = 'Thank you — message received. I will respond within a few days.';
-    fb.style.display = 'block';
-    e.target.reset();
-  }
-</script>
-
+    }
+  </script>
 </body>
 </html>
+
